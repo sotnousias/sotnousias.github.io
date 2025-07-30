@@ -33,7 +33,7 @@
               <p style="text-align:center">
                 <a href="mailto:sotirisno@gmail.com">Email</a> &nbsp/&nbsp
 <!--                <a href="data/sotiris-CV.pdf">CV</a> &nbsp/&nbsp-->
-                <a href="https://twitter.com/Sotiris_No/"> Twitter </a>&nbsp/&nbsp
+                <a href="https://twitter.com/Sotiris_No/"> X </a>&nbsp/&nbsp
                 <a href="https://scholar.google.ca/citations?user=BIFpV5UAAAAJ&hl=en">Google Scholar</a> 
               </p>
             </td>
@@ -49,7 +49,7 @@
               <p>
                 I'm interested in computer vision, computational photography and neural fields. My current research revolves around photon cameras, a cutting-edge technology capable of detecting the tiniest unit of light - the photon. I'm excited about coming up with new ways to process signals from photon cameras, so we can see the world in never-before-seen ways.
               </p>
-                      <p>
+          <p>
          <strong>
             I will join <a href="https://www.purdue.edu/">Purdue University</a> in the
             <a href="https://www.cs.purdue.edu/">CS department</a> as an assistant professor in Fall 2025!
@@ -74,24 +74,89 @@
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
-            <tr onmouseout="ultrawideband_stop()" onmouseover="ultrawideband_start()">
+
+
+            <tr onmouseout="oppo_stop()" onmouseover="oppo_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='fan_image'><video  width=100% height=100% muted autoplay loop>
-                <source src="images/fan_dualtime.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video></div>
-                <img src='images/fan_frozen.png' width="160">
+              <div class="one" style="position: relative; width: 160px; height: auto;">
+                <div class="two" id="oppo"
+                     style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0; transition: opacity 0.3s ease;">
+                  <video width="100%" height="100%" muted autoplay loop playsinline>
+                    <source src="images/oppo_transient.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+                <img src="images/oppo_scene.png" width="160">
+              </div>
+              <script type="text/javascript">
+                function oppo_start() {
+                  document.getElementById('oppo').style.opacity = "1";
+                }
+
+                function oppo_stop() {
+                  document.getElementById('oppo').style.opacity = "0";
+                }
+
+                window.onload = function () {
+                  oppo_stop();
+                };
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://openaccess.thecvf.com/content/CVPR2025/papers/Nousias_Opportunistic_Single-Photon_Time_of_Flight_CVPR_2025_paper.pdf">
+                <papertitle style="color:#0066cc; font-weight:bold;">Opportunistic Single‑Photon Time of Flight</papertitle>
+              </a>
+              <br>
+              <strong>Sotiris Nousias<sup>*</sup></strong>,
+              <a href="https://www.cs.toronto.edu/~mianwei/">Mian Wei</a><sup>*</sup>,
+              <a href="https://howardxiao.ca/">Howard Xiao</a>,
+              <a href="http://www.cs.toronto.edu/~wumaxx/">Maxx Wu</a>,
+              <a href="https://ca.linkedin.com/in/shahmeerathar">Shahmeer Athar</a>,
+              <a href="https://ca.linkedin.com/in/kevin-j-wang">Kevin J. Wang</a>,
+              <a href="https://anaghmalik.com/">Anagh Malik</a>,
+              <a href="https://davidbar.org/">David A. Barmherzig</a>,
+              <a href="http://davidlindell.com">David B. Lindell</a>,
+              <a href="http://www.cs.toronto.edu/~kyros/">Kiriakos N. Kutulakos</a> 
+              <br>
+              * Joint first authors.<br>
+              <em>CVPR</em> 2025, <font color="red"><strong>Oral</strong></font>
+              <br>
+              <a href="https://www.dgp.toronto.edu/projects/opportunistic/" style="color:#0066cc;">project page</a>
+              <p></p>
+              <p>
+                We propose a passive single‑photon method that opportunistically recovers time‑of‑flight from ambient pulsed light sources.
+              </p>
+            </td>
+          </tr>
+
+
+
+
+
+            <tr onmouseout="ultrawideband_stop()" onmouseover="ultrawideband_start()">
+             <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one" style="position: relative; width: 160px; height: auto;">
+                <div class="two" id="fan_image"
+                     style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0; transition: opacity 0.3s ease;">
+                  <video width="100%" height="100%" muted autoplay loop playsinline>
+                    <source src="images/fan_dualtime_compressed.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+                <img src="images/fan_frozen.png" width="160">
               </div>
               <script type="text/javascript">
                 function ultrawideband_start() {
                   document.getElementById('fan_image').style.opacity = "1";
                 }
-      
+
                 function ultrawideband_stop() {
                   document.getElementById('fan_image').style.opacity = "0";
                 }
-                tnerf_stop()
+
+                window.onload = function () {
+                  ultrawideband_stop();
+                };
               </script>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
@@ -100,7 +165,7 @@
               </a>
 
               <br>
-                <a href="http://www.dgp.toronto.edu/~mianwei/">Mian Wei*</a>, <strong>Sotiris Nousias*</strong>, <a href="https://rahulgulve.com/">Rahul Gulve </a>, <a href="https://davidlindell.com/">David B. Lindell</a>, <a href="https://www.cs.toronto.edu/~kyros/">Kiriakos N. Kutulakos</a>
+                <a href="http://www.dgp.toronto.edu/~mianwei/">Mian Wei<sup>*</sup></a>, <strong>Sotiris Nousias<sup>*</sup></strong>, <a href="https://rahulgulve.com/">Rahul Gulve </a>, <a href="https://davidlindell.com/">David B. Lindell</a>, <a href="https://www.cs.toronto.edu/~kyros/">Kiriakos N. Kutulakos</a>
               
                <br style="font-size: smaller;">* Joint first authors.</br>
               <em>ICCV</em> 2023, <font color="red"><strong>Marr Prize (best paper award)</strong></font>
