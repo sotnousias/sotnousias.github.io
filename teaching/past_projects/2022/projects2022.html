@@ -1,0 +1,893 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD html 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<!-- saved from url=(0098)http://stanford.edu/class/ee367/EE367%20_%20CS448I_%20Computational%20Imaging%20and%20Display.html -->
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>CSC2529: Computational Imaging</title>
+
+<style type="text/css" media="all"> img {
+  padding-right: 0px; padding-left: 10px; FLOAT: right; padding-bottom: 10px; padding-top: 10px
+}
+
+#primarycontent {
+  margin-left: auto;  
+    width: expression(document.body.clientWidth > 995? "995px": "auto" );
+    margin-right: auto;
+    text-align: left;
+    max-width: 995px 
+}
+
+body {
+  text-align: center
+}
+</style>
+
+<meta content="MShtml 6.00.2800.1400" name="GENERATOR"><style id="style-1-cropbar-clipper">/* Copyright 2014 Evernote Corporation. All rights reserved. */
+.en-markup-crop-options {
+    top: 18px !important;
+    left: 50% !important;
+    margin-left: -100px !important;
+    width: 200px !important;
+    border: 2px rgba(255,255,255,.38) solid !important;
+    border-radius: 4px !important;
+}
+
+.en-markup-crop-options div div:first-of-type {
+    margin-left: 0px !important;
+}
+</style></head>
+
+<body>
+
+<div id="primarycontent"> <center><h1>Fall 2022, CSC2529: Computational Imaging</h1>
+        <h2>Instructors: <a href="https://davidlindell.com/" target="_blank">David Lindell</a>,
+        <a href="https://www.cs.toronto.edu/~parsa/" target="_blank"> Parsa Mirdehghan (TA)</a>,
+        <a href="https://shekshaa.github.io/" target="_blank"> Shayan Shekarforoush (TA)</a>,
+        <a href="http://www.cs.toronto.edu/~robin/" target="_blank"> Robin Swanson (TA)</a>,
+        <a href="http://www.dgp.toronto.edu/~mianwei/" target="_blank"> Mian Wei (TA)</a>
+        <br><br></h2>
+</center>
+
+
+<br>
+
+<center><h1>Final Projects</h1>
+
+<br>
+
+<table width="100%" cellspacing="0" cellpadding="10" border="1">
+  <tbody><tr valign="middle">
+    <td width="2%">
+      <font face="Arial" size="2">#</font>
+    </td> <td width="14%">
+      <font face="Arial" size="2"><b>Team Members</b></font>
+    </td>
+    <td width="15%">
+      <font face="Arial" size="2"><b>Project Title</b></font>
+    </td>
+    <td width="8%">
+      <font face="Arial" size="2"><b>Mentor</b></font>
+    </td>
+    <td width="3%"> 
+      <font face="Arial" size="2"><b>Proposal</b></font>
+    </td>
+    <td width="3%">
+      <font face="Arial" size="2"><b>Report</b></font>
+    </td>
+    <td width="3%">
+      <font face="Arial" size="2"><b>Poster</b></font>
+    </td>    
+    <td width="3%">
+      <font face="Arial" size="2"><b>Code</b></font>
+    </td>
+  </tr>
+
+  <tr valign="middle">
+    <td>
+        <font face="Arial" size="2">1</font> </td>
+    <td>
+        <font face="Arial" size="2">Jinjie Sun, Julia Wiercigroch</font>
+    </td>
+    <td>
+        <font face="Arial" size="2">3D Reconstruction of Subglottic Stenosis using Neural Radiance Fields and Robotics</font>
+    </td>
+    <td>
+        <font face="Arial" size="2">Parsa</font>
+    </td>
+    <td>
+    <font face="Arial" size="2"><a href="proposal/jinjie_sun.pdf">PDF</a></font>
+    </td>
+    <td> 
+    <font face="Arial" size="2"><a href="report/jinjie_sun-julia_wiercigroch.pdf">PDF</a></font>
+    </td>
+    <td>
+    <font face="Arial" size="2"><a href="poster/julia_wiercigroch.pdf">PDF</a></font>
+    </td>
+    <td>
+    <font face="Arial" size="2"><a href="https://drive.google.com/file/d/1LAxWeW29-nRQ1zyRzd1APnbGitoeneT2/view?usp=share_link">ZIP</a></font>
+    </td>
+  </tr>
+
+  <tr valign="middle">
+    <td>
+        <font face="Arial" size="2">2</font> </td>
+    <td>
+        <font face="Arial" size="2">Anagh, Xiaonong Sun</font>
+    </td>
+    <td>
+        <font face="Arial" size="2">A Novel View Direct and Indirect Image Synthesis Method</font>
+    </td>
+    <td>
+        <font face="Arial" size="2">David</font>
+    </td>
+    <td>
+    <font face="Arial" size="2"><a href="proposal/anagh.pdf">PDF</a></font>
+    </td>
+    <td> 
+    <font face="Arial" size="2"><a href="report/anagh-xiaonong_sun.pdf">PDF</a></font>
+    </td>
+    <td>
+    <font face="Arial" size="2"><a href="poster/xiaonong_sun.pdf">PDF</a></font>
+    </td>
+    <td>
+    <font face="Arial" size="2"><a href="https://drive.google.com/file/d/1faGGZpxU6IT-9BtI_6QLq-cTfSDSrGxg/view?usp=share_link">ZIP</a></font>
+    </td>
+  </tr>
+
+  <tr valign="middle">
+    <td>
+        <font face="Arial" size="2">3</font> </td>
+    <td>
+        <font face="Arial" size="2">Landy, Meng Zhou, Yuxuan Zhang</font>
+    </td>
+    <td>
+        <font face="Arial" size="2">An Attention-based Multi-Scale Feature Learning Network for Multimodal Medical Image Fusion</font>
+    </td>
+    <td>
+        <font face="Arial" size="2">Robin</font>
+    </td>
+    <td>
+    <font face="Arial" size="2"></font>
+    </td>
+    <td> 
+    <font face="Arial" size="2"><a href="report/landy-meng_zhou-yuxuan_zhang.pdf">PDF</a></font>
+    </td>
+    <td>
+    <font face="Arial" size="2"><a href="poster/landy-meng_zhou-yuxuan_zhang.pdf">PDF</a></font>
+    </td>
+    <td>
+    <font face="Arial" size="2"><a href="https://github.com/simonZhou86/dilran">ZIP</a></font>
+    </td>
+  </tr>
+
+  <tr valign="middle">
+    <td>
+        <font face="Arial" size="2">4</font> </td>
+    <td>
+        <font face="Arial" size="2">Apoorv Dankar, Jaskaran Singh, Tirth Patel</font>
+    </td>
+    <td>
+        <font face="Arial" size="2">An End-to-End Pipeline for Medical Image Enhancement using GANs Architecture</font>
+    </td>
+    <td>
+        <font face="Arial" size="2">Robin</font>
+    </td>
+    <td>
+    <font face="Arial" size="2"></font>
+    </td>
+    <td> 
+    <font face="Arial" size="2"><a href="report/apoorv_dankar-jaskaran_singh-tirth_patel.pdf">PDF</a></font>
+    </td>
+    <td>
+    <font face="Arial" size="2"><a href="poster/apoorv_dankar-jaskaran_singh-tirth_patel.pdf">PDF</a></font>
+    </td>
+    <td>
+    <font face="Arial" size="2"><a href="https://drive.google.com/drive/folders/1VCLZdq7StJR4xHrwRGPh0NKmEy4KWmJI">ZIP</a></font>
+    </td>
+  </tr>
+
+  <tr valign="middle">
+    <td>
+        <font face="Arial" size="2">5</font> </td>
+    <td>
+        <font face="Arial" size="2">Kejia Yin</font>
+    </td>
+    <td>
+        <font face="Arial" size="2">Can Diffusion Model Generalize Well in Image Super Resolution with Limited Fine Tuning?</font>
+    </td>
+    <td>
+        <font face="Arial" size="2">Shayan</font>
+    </td>
+    <td>
+    <font face="Arial" size="2"><a href="proposal/kejia_yin.pdf">PDF</a></font>
+    </td>
+    <td> 
+    <font face="Arial" size="2"><a href="report/kejia_yin.pdf">PDF</a></font>
+    </td>
+    <td>
+    <font face="Arial" size="2"><a href="poster/kejia_yin.pdf">PDF</a></font>
+    </td>
+    <td>
+    <font face="Arial" size="2"><a href="https://drive.google.com/file/d/1jAcOiYfqPyA9bi3s-eVivYSKtYQSxuDq/view?usp=share_link">ZIP</a></font>
+    </td>
+  </tr>
+
+  <tr valign="middle">
+    <td>
+        <font face="Arial" size="2">6</font> </td>
+    <td>
+        <font face="Arial" size="2">Hana Darling-Wolf, Jeffrey Qiu</font>
+    </td>
+    <td>
+        <font face="Arial" size="2">Comparative Analysis of Inverse Halftoning Techniques</font>
+    </td>
+    <td>
+        <font face="Arial" size="2">David</font>
+    </td>
+    <td>
+    <font face="Arial" size="2"><a href="proposal/hana_darling-wolf.pdf">PDF</a></font>
+    </td>
+    <td> 
+    <font face="Arial" size="2"><a href="report/hana_darling-wolf-jeffrey_qiu.pdf">PDF</a></font>
+    </td>
+    <td>
+    <font face="Arial" size="2"><a href="poster/hana_darling-wolf.pdf">PDF</a></font>
+    </td>
+    <td>
+    <font face="Arial" size="2"><a href="https://drive.google.com/drive/folders/1qTq3hM0EW8HVW1lFNCsiKP51XMzNDdXG">ZIP</a></font>
+    </td>
+  </tr>
+
+  <tr valign="middle">
+    <td>
+        <font face="Arial" size="2">7</font> </td>
+    <td>
+        <font face="Arial" size="2">Akash Haridas, Kartikaeya Kumar, Zakaria Patel</font>
+    </td>
+    <td>
+        <font face="Arial" size="2">Deconvolution using ADMM with Diffusion Denoising Prior</font>
+    </td>
+    <td>
+        <font face="Arial" size="2">Mian</font>
+    </td>
+    <td>
+    <font face="Arial" size="2"><a href="proposal/zakaria_patel.pdf">PDF</a></font>
+    </td>
+    <td> 
+    <font face="Arial" size="2"><a href="report/akash_haridas-kartikaeya_kumar-zakaria_patel.pdf">PDF</a></font>
+    </td>
+    <td>
+    <font face="Arial" size="2"><a href="poster/akash_haridas-kartikaeya_kumar-zakaria_patel.pdf">PDF</a></font>
+    </td>
+    <td>
+    <font face="Arial" size="2"><a href="https://github.com/ZakariaPZ/ADMM-Deconvolution-with-Diffusion-Prior">ZIP</a></font>
+    </td>
+  </tr>
+
+  <tr valign="middle">
+    <td>
+        <font face="Arial" size="2">8</font> </td>
+    <td>
+        <font face="Arial" size="2">Xiaoyan Li</font>
+    </td>
+    <td>
+        <font face="Arial" size="2">Deep Video Denoising for Facial Signal Processing</font>
+    </td>
+    <td>
+        <font face="Arial" size="2">Mian</font>
+    </td>
+    <td>
+    <font face="Arial" size="2"><a href="proposal/xiaoyan_li.pdf">PDF</a></font>
+    </td>
+    <td> 
+    <font face="Arial" size="2"><a href="report/xiaoyan_li.pdf">PDF</a></font>
+    </td>
+    <td>
+    <font face="Arial" size="2"><a href="poster/xiaoyan_li.pdf">PDF</a></font>
+    </td>
+    <td>
+    <font face="Arial" size="2"><a href="https://drive.google.com/file/d/1xrIzSwE3mAGyn0gnniKrRpgbh_KYSHmF/view">ZIP</a></font>
+    </td>
+  </tr>
+
+  <tr valign="middle">
+    <td>
+        <font face="Arial" size="2">9</font> </td>
+    <td>
+        <font face="Arial" size="2">Tianshu Kuai, Yan Ma, Yihan Ni</font>
+    </td>
+    <td>
+        <font face="Arial" size="2">Denoising Event Data with Neural Networks</font>
+    </td>
+    <td>
+        <font face="Arial" size="2">Parsa</font>
+    </td>
+    <td>
+    <font face="Arial" size="2"><a href="proposal/tianshu_kuai.pdf">PDF</a></font>
+    </td>
+    <td> 
+    <font face="Arial" size="2"><a href="report/tianshu_kuai-yan_ma-yihan_ni.pdf">PDF</a></font>
+    </td>
+    <td>
+    <font face="Arial" size="2"><a href="poster/tianshu_kuai.pdf">PDF</a></font>
+    </td>
+    <td>
+    <font face="Arial" size="2"><a href="https://drive.google.com/file/d/1xWsFkwq_obHDwrEVhdlgexx-OCBsLkPm/view?usp=share_link">ZIP</a></font>
+    </td>
+  </tr>
+
+  <tr valign="middle">
+    <td>
+        <font face="Arial" size="2">10</font> </td>
+    <td>
+        <font face="Arial" size="2">Jasper Zhang, Zhiling Zou</font>
+    </td>
+    <td>
+        <font face="Arial" size="2">Denoising for Low-dose Computed Tomography</font>
+    </td>
+    <td>
+        <font face="Arial" size="2">David</font>
+    </td>
+    <td>
+    <font face="Arial" size="2"><a href="proposal/zhiling_zou.pdf">PDF</a></font>
+    </td>
+    <td> 
+    <font face="Arial" size="2"><a href="report/jasper_zhang-zhiling_zou.pdf">PDF</a></font>
+    </td>
+    <td>
+    <font face="Arial" size="2">PDF</font>
+    </td>
+    <td>
+    <font face="Arial" size="2"></font>
+    </td>
+  </tr>
+
+  <tr valign="middle">
+    <td>
+        <font face="Arial" size="2">11</font> </td>
+    <td>
+        <font face="Arial" size="2">Jason Tang, Junbo Huang</font>
+    </td>
+    <td>
+        <font face="Arial" size="2">Ensemble-based Defensive Pipeline Against Adversarial Attacks</font>
+    </td>
+    <td>
+        <font face="Arial" size="2">Parsa</font>
+    </td>
+    <td>
+    <font face="Arial" size="2"><a href="proposal/jason_tang.pdf">PDF</a></font>
+    </td>
+    <td> 
+    <font face="Arial" size="2"><a href="report/jason_tang-junbo_huang.pdf">PDF</a></font>
+    </td>
+    <td>
+    <font face="Arial" size="2"><a href="poster/jason_tang.pdf">PDF</a></font>
+    </td>
+    <td>
+    <font face="Arial" size="2"><a href="https://drive.google.com/file/d/1XDP5gjrw7qNqsscDQqSr316jV1cKxbgN/view?usp=share_link">ZIP</a></font>
+    </td>
+  </tr>
+
+  <tr valign="middle">
+    <td>
+        <font face="Arial" size="2">12</font> </td>
+    <td>
+        <font face="Arial" size="2">Miaoqi Zhang, Xuduo Gu</font>
+    </td>
+    <td>
+        <font face="Arial" size="2">Evaluation of Denoising Diffusion Probabilistic Models in Denoising Tasks</font>
+    </td>
+    <td>
+        <font face="Arial" size="2">Shayan</font>
+    </td>
+    <td>
+    <font face="Arial" size="2"><a href="proposal/miaoqi_zhang-xuduo_gu.pdf">PDF</a></font>
+    </td>
+    <td> 
+    <font face="Arial" size="2"><a href="report/miaoqi_zhang-xuduo_gu.pdf">PDF</a></font>
+    </td>
+    <td>
+    <font face="Arial" size="2">PDF</font>
+    </td>
+    <td>
+    <font face="Arial" size="2"><a href="https://drive.google.com/file/d/1PqAPfBqlh5JoVYbB3m9BEXdp6E8OIIgh/view">ZIP</a></font>
+    </td>
+  </tr>
+
+  <tr valign="middle">
+    <td>
+        <font face="Arial" size="2">14</font> </td>
+    <td>
+        <font face="Arial" size="2">Joonho</font>
+    </td>
+    <td>
+        <font face="Arial" size="2">Exploring Cartoon Priors for Neural Radiance Fields</font>
+    </td>
+    <td>
+        <font face="Arial" size="2">Parsa</font>
+    </td>
+    <td>
+    <font face="Arial" size="2"><a href="proposal/joonho.pdf">PDF</a></font>
+    </td>
+    <td> 
+    <font face="Arial" size="2"><a href="report/joonho.pdf">PDF</a></font>
+    </td>
+    <td>
+    <font face="Arial" size="2"><a href="poster/joonho.pdf">PDF</a></font>
+    </td>
+    <td>
+    <font face="Arial" size="2"><a href="https://drive.google.com/file/d/1DbvxcPJAbxeHaGJY_LTOxP8D9Hza0Xzy/view">ZIP</a></font>
+    </td>
+  </tr>
+
+  <tr valign="middle">
+    <td>
+        <font face="Arial" size="2">15</font> </td>
+    <td>
+        <font face="Arial" size="2">Shirley Wang</font>
+    </td>
+    <td>
+        <font face="Arial" size="2">Fine-tuning Dense Prediction Vision Transformers for Image Restoration</font>
+    </td>
+    <td>
+        <font face="Arial" size="2">Shayan</font>
+    </td>
+    <td>
+    <font face="Arial" size="2"><a href="proposal/shirley_wang.pdf">PDF</a></font>
+    </td>
+    <td> 
+    <font face="Arial" size="2"><a href="report/shirley_wang.pdf">PDF</a></font>
+    </td>
+    <td>
+    <font face="Arial" size="2"><a href="poster/shirley_wang.pdf">PDF</a></font>
+    </td>
+    <td>
+    <font face="Arial" size="2"><a href="https://drive.google.com/file/d/14Ot08DNCkwPwdX9ZPkqFwyo6we5LkdEz/view?usp=share_link">ZIP</a></font>
+    </td>
+  </tr>
+
+  <tr valign="middle">
+    <td>
+        <font face="Arial" size="2">16</font> </td>
+    <td>
+        <font face="Arial" size="2">Bingjie Shen, Jiachen Xu, Jingtao Zhou</font>
+    </td>
+    <td>
+        <font face="Arial" size="2">Guiding Deep Image Prior with Traditional Image Recovery Methods</font>
+    </td>
+    <td>
+        <font face="Arial" size="2">David</font>
+    </td>
+    <td>
+    <font face="Arial" size="2"><a href="proposal/jiachen_xu.pdf">PDF</a></font>
+    </td>
+    <td> 
+    <font face="Arial" size="2"><a href="report/bingjie_shen-jiachen_xu-jingtao_zhou.pdf">PDF</a></font>
+    </td>
+    <td>
+    <font face="Arial" size="2"><a href="poster/bingjie_shen.pdf">PDF</a></font>
+    </td>
+    <td>
+    <font face="Arial" size="2"><a href="https://github.com/charliexu07/CS2529_Project">ZIP</a></font>
+    </td>
+  </tr>
+
+  <tr valign="middle">
+    <td>
+        <font face="Arial" size="2">17</font> </td>
+    <td>
+        <font face="Arial" size="2">Kate Starovoit</font>
+    </td>
+    <td>
+        <font face="Arial" size="2">How Should I Take Pictures on a Rainy Day?</font>
+    </td>
+    <td>
+        <font face="Arial" size="2">Mian</font>
+    </td>
+    <td>
+    <font face="Arial" size="2"><a href="proposal/kate_starovoit.pdf">PDF</a></font>
+    </td>
+    <td> 
+    <font face="Arial" size="2"><a href="report/kate_starovoit.pdf">PDF</a></font>
+    </td>
+    <td>
+    <font face="Arial" size="2"><a href="poster/kate_starovoit.pdf">PDF</a></font>
+    </td>
+    <td>
+    <font face="Arial" size="2"><a href="https://drive.google.com/drive/folders/1JbctiFCwRsIbSioERFgk66cov12ORHQ-">ZIP</a></font>
+    </td>
+  </tr>
+
+  <tr valign="middle">
+    <td>
+        <font face="Arial" size="2">19</font> </td>
+    <td>
+        <font face="Arial" size="2">Richard, Wenzhe Xu, l1j2b</font>
+    </td>
+    <td>
+        <font face="Arial" size="2">Image Denoising using Deep Residual Blocks with Fourier Transform</font>
+    </td>
+    <td>
+        <font face="Arial" size="2">Mian</font>
+    </td>
+    <td>
+    <font face="Arial" size="2"><a href="proposal/wenzhe_xu.pdf">PDF</a></font>
+    </td>
+    <td> 
+    <font face="Arial" size="2"><a href="report/l1j2b-richard-wenzhe_xu.pdf">PDF</a></font>
+    </td>
+    <td>
+    <font face="Arial" size="2"><a href="poster/wenzhe_xu.pdf">PDF</a></font>
+    </td>
+    <td>
+    <font face="Arial" size="2"><a href="https://drive.google.com/file/d/1TS_prZs5ITAHBes9bHlNHR9nqzWS9T8j/view?usp=share_link">ZIP</a></font>
+    </td>
+  </tr>
+
+  <tr valign="middle">
+    <td>
+        <font face="Arial" size="2">20</font> </td>
+    <td>
+        <font face="Arial" size="2">Xinman Liu, Xuanchi Ren, Ziyi Wu</font>
+    </td>
+    <td>
+        <font face="Arial" size="2">Inverting Image Signal Processing Pipeline with Diffusion Models</font>
+    </td>
+    <td>
+        <font face="Arial" size="2">Shayan</font>
+    </td>
+    <td>
+    <font face="Arial" size="2"><a href="proposal/xuanchi_ren.pdf">PDF</a></font>
+    </td>
+    <td> 
+    <font face="Arial" size="2"><a href="report/xinman_liu-xuanchi_ren-ziyi_wu.pdf">PDF</a></font>
+    </td>
+    <td>
+    <font face="Arial" size="2"><a href="poster/xinman_liu-xuanchi_ren-ziyi_wu.pdf">PDF</a></font>
+    </td>
+    <td>
+    <font face="Arial" size="2"><a href="https://drive.google.com/file/d/1FwoU_1rHaDZaXUhmHs5lXO-oT7719wkp/edit">ZIP</a></font>
+    </td>
+  </tr>
+
+  <tr valign="middle">
+    <td>
+        <font face="Arial" size="2">21</font> </td>
+    <td>
+        <font face="Arial" size="2">Vishwesh Ramanathan</font>
+    </td>
+    <td>
+        <font face="Arial" size="2">Investigating Different Priors for Image Deconvolution in Histopathology Images</font>
+    </td>
+    <td>
+        <font face="Arial" size="2">Shayan</font>
+    </td>
+    <td>
+    <font face="Arial" size="2"><a href="proposal/vishwesh_ramanathan.pdf">PDF</a></font>
+    </td>
+    <td> 
+    <font face="Arial" size="2"><a href="report/vishwesh_ramanathan.pdf">PDF</a></font>
+    </td>
+    <td>
+    <font face="Arial" size="2"><a href="poster/vishwesh_ramanathan.pdf">PDF</a></font>
+    </td>
+    <td>
+    <font face="Arial" size="2"><a href="https://drive.google.com/file/d/1nZgfsdiKAMBJgGm8FXzoReLI2CZheOlR/view?usp=share_link">ZIP</a></font>
+    </td>
+  </tr>
+
+  <tr valign="middle">
+    <td>
+        <font face="Arial" size="2">22</font> </td>
+    <td>
+        <font face="Arial" size="2">Jiageng Mao, Jingkang Wang, Ze Yang</font>
+    </td>
+    <td>
+        <font face="Arial" size="2">Learning In-the-wild 3D Vehicle Generation for Realistic Sensor Simulation</font>
+    </td>
+    <td>
+        <font face="Arial" size="2">Robin</font>
+    </td>
+    <td>
+    <font face="Arial" size="2"><a href="proposal/jiageng_mao.pdf">PDF</a></font>
+    </td>
+    <td> 
+    <font face="Arial" size="2"><a href="report/jiageng_mao-jingkang_wang-ze_yang.pdf">PDF</a></font>
+    </td>
+    <td>
+    <font face="Arial" size="2"><a href="poster/jiageng_mao.pdf">PDF</a></font>
+    </td>
+    <td>
+    <font face="Arial" size="2"><a href="https://drive.google.com/drive/folders/19uWlsDIyKh_pSXPwX9anr8osifBDrZaN">ZIP</a></font>
+    </td>
+  </tr>
+
+  <tr valign="middle">
+    <td>
+        <font face="Arial" size="2">23</font> </td>
+    <td>
+        <font face="Arial" size="2">Jingyu Liu, Xinrong Zhou, Xinyu Zhang</font>
+    </td>
+    <td>
+        <font face="Arial" size="2">Leveraging Residual Neural Network for UNet Image Denoising with Perceptual Loss</font>
+    </td>
+    <td>
+        <font face="Arial" size="2">Parsa</font>
+    </td>
+    <td>
+    <font face="Arial" size="2"><a href="proposal/xinrong_zhou.pdf">PDF</a></font>
+    </td>
+    <td> 
+    <font face="Arial" size="2"><a href="report/jingyu_liu-xinrong_zhou-xinyu_zhang.pdf">PDF</a></font>
+    </td>
+    <td>
+    <font face="Arial" size="2"><a href="poster/xinrong_zhou.pdf">PDF</a></font>
+    </td>
+    <td>
+    <font face="Arial" size="2"><a href="https://drive.google.com/file/d/1iCwZv00xD9l2ujNp3U0lYQ4ynTvV5W4u/view">ZIP</a></font>
+    </td>
+  </tr>
+
+  <tr valign="middle">
+    <td>
+        <font face="Arial" size="2">25</font> </td>
+    <td>
+        <font face="Arial" size="2">Chaojun Chen, Chengnan Shentu, Thomas En Xu Li</font>
+    </td>
+    <td>
+        <font face="Arial" size="2">Monocular Shape Sensing for Continuum Robot</font>
+    </td>
+    <td>
+        <font face="Arial" size="2">David</font>
+    </td>
+    <td>
+    <font face="Arial" size="2"><a href="proposal/thomas_en_xu_li.pdf">PDF</a></font>
+    </td>
+    <td> 
+    <font face="Arial" size="2"><a href="report/chaojun_chen-chengnan_shentu-thomas_en_xu_li.pdf">PDF</a></font>
+    </td>
+    <td>
+    <font face="Arial" size="2"><a href="poster/thomas_en_xu_li.pdf">PDF</a></font>
+    </td>
+    <td>
+    <font face="Arial" size="2"><a href="https://drive.google.com/file/d/1rir_6RThq4Urj2hmKD4VYuSsBQiyFQCf/view?usp=share_link">ZIP</a></font>
+    </td>
+  </tr>
+
+  <tr valign="middle">
+    <td>
+        <font face="Arial" size="2">26</font> </td>
+    <td>
+        <font face="Arial" size="2">Haining Tan, Ke Zhao, Tsz Fung</font>
+    </td>
+    <td>
+        <font face="Arial" size="2">Multi-Reference Image Super-Resolution: A Posterior Fusion Approach</font>
+    </td>
+    <td>
+        <font face="Arial" size="2">David</font>
+    </td>
+    <td>
+    <font face="Arial" size="2"><a href="proposal/ke_zhao.pdf">PDF</a></font>
+    </td>
+    <td> 
+    <font face="Arial" size="2"><a href="report/haining_tan-ke_zhao-tsz_fung.pdf">PDF</a></font>
+    </td>
+    <td>
+    <font face="Arial" size="2"><a href="poster/ke_zhao.pdf">PDF</a></font>
+    </td>
+    <td>
+    <font face="Arial" size="2"><a href="https://github.com/XDMickeyYau/CSC2529-Project">ZIP</a></font>
+    </td>
+  </tr>
+
+  <tr valign="middle">
+    <td>
+        <font face="Arial" size="2">27</font> </td>
+    <td>
+        <font face="Arial" size="2">Dylan Dao, Jie Jiao</font>
+    </td>
+    <td>
+        <font face="Arial" size="2">Multifrequency Illumination Patterns in Single Snapshot Tissue Optical Properties Imaging</font>
+    </td>
+    <td>
+        <font face="Arial" size="2">David</font>
+    </td>
+    <td>
+    <font face="Arial" size="2"><a href="proposal/dylan_dao.pdf">PDF</a></font>
+    </td>
+    <td> 
+    <font face="Arial" size="2"><a href="report/dylan_dao-jie_jiao.pdf">PDF</a></font>
+    </td>
+    <td>
+    <font face="Arial" size="2"><a href="poster/dylan_dao.pdf">PDF</a></font>
+    </td>
+    <td>
+    <font face="Arial" size="2"><a href="https://drive.google.com/file/d/1kz--LKt5SZnEKxko0A5U86rdN8oSHjiS/view?usp=share_link">ZIP</a></font>
+    </td>
+  </tr>
+
+  <tr valign="middle">
+    <td>
+        <font face="Arial" size="2">28</font> </td>
+    <td>
+        <font face="Arial" size="2">Zhecheng Wang</font>
+    </td>
+    <td>
+        <font face="Arial" size="2">Post-processing Spatially Varying Blur Effects with Learned 6D Blur Fields</font>
+    </td>
+    <td>
+        <font face="Arial" size="2">David</font>
+    </td>
+    <td>
+    <font face="Arial" size="2"><a href="proposal/zhecheng_wang.pdf">PDF</a></font>
+    </td>
+    <td> 
+    <font face="Arial" size="2"><a href="report/zhecheng_wang.pdf">PDF</a></font>
+    </td>
+    <td>
+    <font face="Arial" size="2"><a href="poster/zhecheng_wang.pdf">PDF</a></font>
+    </td>
+    <td>
+    <font face="Arial" size="2"><a href="https://drive.google.com/file/d/1srZF_akCCYlV3_jKNKNi2MpdeQNZuc3P/view?usp=share_link">ZIP</a></font>
+    </td>
+  </tr>
+
+  <tr valign="middle">
+    <td>
+        <font face="Arial" size="2">29</font> </td>
+    <td>
+        <font face="Arial" size="2">Ruofan Liang</font>
+    </td>
+    <td>
+        <font face="Arial" size="2">Reconstructing and Rendering Shiny Surface with Hybrid Neural Fields</font>
+    </td>
+    <td>
+        <font face="Arial" size="2">Parsa</font>
+    </td>
+    <td>
+    <font face="Arial" size="2"><a href="proposal/ruofan_liang.pdf">PDF</a></font>
+    </td>
+    <td> 
+    <font face="Arial" size="2"><a href="report/ruofan_liang.pdf">PDF</a></font>
+    </td>
+    <td>
+    <font face="Arial" size="2"><a href="poster/ruofan_liang.pdf">PDF</a></font>
+    </td>
+    <td>
+    <font face="Arial" size="2"><a href="https://drive.google.com/file/d/1U0AAW7w59i1Z6_dqQV5AX7DAW1UxhuPY/view?usp=share_link">ZIP</a></font>
+    </td>
+  </tr>
+
+  <tr valign="middle">
+    <td>
+        <font face="Arial" size="2">30</font> </td>
+    <td>
+        <font face="Arial" size="2">Yi Cheng Zhu, jamie xu</font>
+    </td>
+    <td>
+        <font face="Arial" size="2">Segmentation of Mechanical Coupling Using Phased Based Motion Amplification of Sub-Pixel Variation</font>
+    </td>
+    <td>
+        <font face="Arial" size="2">Robin</font>
+    </td>
+    <td>
+    <font face="Arial" size="2"><a href="proposal/jamie_xu.pdf">PDF</a></font>
+    </td>
+    <td> 
+    <font face="Arial" size="2"><a href="report/jamie_xu-yi_cheng_zhu.pdf">PDF</a></font>
+    </td>
+    <td>
+    <font face="Arial" size="2"><a href="poster/jamie_xu.pdf">PDF</a></font>
+    </td>
+    <td>
+    <font face="Arial" size="2"><a href="https://drive.google.com/file/d/1ZVCeML8Cs9pjzmcCV2R7hAanfqB6M2qR/view">ZIP</a></font>
+    </td>
+  </tr>
+
+  <tr valign="middle">
+    <td>
+        <font face="Arial" size="2">31</font> </td>
+    <td>
+        <font face="Arial" size="2">Martin</font>
+    </td>
+    <td>
+        <font face="Arial" size="2">Spiking Neural Networks for Depth Estimation</font>
+    </td>
+    <td>
+        <font face="Arial" size="2">David</font>
+    </td>
+    <td>
+    <font face="Arial" size="2"><a href="proposal/martin.pdf">PDF</a></font>
+    </td>
+    <td> 
+    <font face="Arial" size="2"><a href="report/martin.pdf">PDF</a></font>
+    </td>
+    <td>
+    <font face="Arial" size="2"><a href="poster/martin.pdf">PDF</a></font>
+    </td>
+    <td>
+    <font face="Arial" size="2"><a href="https://github.com/mdpham/StereoSpike">ZIP</a></font>
+    </td>
+  </tr>
+
+  <tr valign="middle">
+    <td>
+        <font face="Arial" size="2">32</font> </td>
+    <td>
+        <font face="Arial" size="2">Nadia Li</font>
+    </td>
+    <td>
+        <font face="Arial" size="2">Statistical Texture Recognition and Classification Using Variants of Local Binary Pattern</font>
+    </td>
+    <td>
+        <font face="Arial" size="2">Mian</font>
+    </td>
+    <td>
+    <font face="Arial" size="2"><a href="proposal/nadia_li.pdf">PDF</a></font>
+    </td>
+    <td> 
+    <font face="Arial" size="2"><a href="report/nadia_li.pdf">PDF</a></font>
+    </td>
+    <td>
+    <font face="Arial" size="2"><a href="poster/nadia_li.pdf">PDF</a></font>
+    </td>
+    <td>
+    <font face="Arial" size="2"><a href="https://drive.google.com/file/d/13F7BiMAB6rgFsy6oAGALsa0X72ma8e-J/view?usp=share_link">ZIP</a></font>
+    </td>
+  </tr>
+
+  <tr valign="middle">
+    <td>
+        <font face="Arial" size="2">33</font> </td>
+    <td>
+        <font face="Arial" size="2">Sarah Hindawi, Sumant Bagri, Vignesh Edithal</font>
+    </td>
+    <td>
+        <font face="Arial" size="2">Synthesis of Brain Tumor MRI Images using GAN Aggregation with Style Transfer</font>
+    </td>
+    <td>
+        <font face="Arial" size="2">Robin</font>
+    </td>
+    <td>
+    <font face="Arial" size="2"></font>
+    </td>
+    <td> 
+    <font face="Arial" size="2"><a href="report/sarah_hindawi-sumant_bagri-vignesh_edithal.pdf">PDF</a></font>
+    </td>
+    <td>
+    <font face="Arial" size="2"><a href="poster/sumant_bagri.pdf">PDF</a></font>
+    </td>
+    <td>
+    <font face="Arial" size="2"><a href="https://github.com/edithal-14/csc2529-2022-project">ZIP</a></font>
+    </td>
+  </tr>
+
+  <tr valign="middle">
+    <td>
+        <font face="Arial" size="2">34</font> </td>
+    <td>
+        <font face="Arial" size="2">Zhixiang Chi</font>
+    </td>
+    <td>
+        <font face="Arial" size="2">Weakly Supervising the Deep Priors for Blind Deconvolution</font>
+    </td>
+    <td>
+        <font face="Arial" size="2">Shayan</font>
+    </td>
+    <td>
+    <font face="Arial" size="2"><a href="proposal/zhixiang_chi.pdf">PDF</a></font>
+    </td>
+    <td> 
+    <font face="Arial" size="2"><a href="report/zhixiang_chi.pdf">PDF</a></font>
+    </td>
+    <td>
+    <font face="Arial" size="2"><a href="poster/zhixiang_chi.pdf">PDF</a></font>
+    </td>
+    <td>
+    <font face="Arial" size="2"><a href="https://drive.google.com/file/d/1LL_jP_JjTLmmoNfEgz9nQcxuQf7ILQLD/view">ZIP</a></font>
+    </td>
+  </tr>
+
+
+<br><hr><br>
+
+</body></html>

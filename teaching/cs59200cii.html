@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Tab icon and title -->
+    <title>CSC2529: Computational Imaging</title>
+    <link rel="shortcut icon" href="imgs/favicon.ico">
+
+    <!-- bootstrap template -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/bootstrap-theme.min.css">
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+
+</head>
+
+<body>
+
+    <nav id="navbar1" class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand brand" href="cs59200cii.html">CS59200-CII</a>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="cs59200cii.html#coursedesc"><b>Description</b></a></li>
+                    <li><a href="cs59200cii.html#logistics"><b>Logistics</b></a></li>
+                    <li><a href="cs59200cii.html#coursework"><b>Coursework</b></a></li>
+                    <li><a href="cs59200cii.html#schedule"><b>Schedule</b></a></li>
+                    <li><a href="notfound" target="_blank"><b>BrightSpace</b></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="header">
+      <div class="logo-container">
+          <a href="https://www.purdue.edu/" target="_blank" 
+             style="position: absolute; top: 100px; left: 20px;">
+            <img src="./imgs/purdue.png" alt="Purdue University Logo" 
+                 style="height: 40px; width: auto; display: block;">
+          </a>
+      </div>
+      <h1 class="title">CS59200-CII: Computational Imaging</h1>
+      <div class="text-center">
+        <h4>Fall 2025</h4>
+      </div>
+    </div>
+
+    <div class="banner">
+    </div>
+
+    <div class="sechighlight">
+        <a class="anchor" id="coursedesc"></a>
+        <div class="container sec">
+            <h1>Course Description</h1>
+            <div>
+                <p>
+
+                Computational imaging is a rapidly growing field that lies at the intersection of optics, signal
+                processing, computer vision, and machine learning. It enables imaging systems that go beyond the
+                limits of traditional cameras, and is foundational to technologies ranging from scientific instruments
+                to everyday consumer devices like smartphones and AR headsets.
+                In this seminar-style course, we will study core ideas and breakthrough papers across a wide
+                range of topics, including event-based vision, single-photon imaging, light field cameras, time-of-
+                flight cameras, and imaging hidden scenes. The course will cover both hardware innovations—such
+                as novel sensors that enable single-shot 3D imaging—and computational techniques that can, for
+                example, recover sound from video. We will also examine how physics-inspired neural representa-
+                tions and differentiable models are reshaping classical problems in imaging, from denoising to 3D
+                perception in complex environments.
+                </p>
+                <p>
+                    Topics include:
+                    <ul>
+                        <li>High dynamic range imaging</li>
+                        <li>Time-of-flight imaging</li>                       
+                        <li>Single-photon imaging</li>
+                        <li>Lensless imaging</li>
+                        <li>Non-line-of-sight (NLOS) imaging</li>
+                        <li>Physics-informed neural representations</li>
+                        <li>End-to-end optimization of optics and image processing</li>     
+                        <li> ... other interesting topics.</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container sec">
+        <div class="row">
+            <div class="col-md-8">
+                <h2 align="left">Instructors</h2>
+                <div class="instructor">
+                    <a href="https://sotirisnousias.com/" target="_blank">
+                        <div class="instructorphoto"><img src="./imgs/sotiris.png"></div>
+                        <div>Sotiris Nousias</div></a>
+                 </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container sechighlight">
+        <a class="anchor" id="logistics"></a>
+        <h1>Course Logistics</h1>
+        <p>
+        <strong>Lectures:</strong> Tuesdays 12:00-1:15pm and Thursdays 12:00-1:15pm in <a href="https://www.purdue.edu/campus-map/" target="_blank">Lawson Computer Science B134</a>.
+        </p>
+        <strong>Instructor office hours:</strong> Tuesdays 2:00-3:00pm (<a href="https://www.purdue.edu/campus-map/" target="_blank">Lawson Computer Science 3154N</a>) starting on September 2; discussion about projects, lecture material, etc. Office hours can also be on Zoom if requested.
+        </p>
+        </p>
+        </p>
+        <p><strong>Helpful background:</strong>
+            <ul>
+            <li>
+                <span class="spanh">Calculus, Linear Algebra</span>: Basic understanding of matrix algebra (e.g., least squares, orthogonality, SVD) will be helpful.
+            </li>
+            <li>
+                <span class="spanh">Statistical Signal Processing</span>: Familiarity with probability theory and Bayes' theorem.
+            </li>
+            <li>
+                <span class="spanh">Discrete Signal Processing</span>: Basic understanding of discrete Fourier transform, convolution theorem.
+            </li>
+            </ul>
+        </p>
+        <p>
+        <strong>Textbook:</strong> While there is no required textbook for the course, the following materials may support a deeper understanding::
+        <ul>
+          <li>
+            <a href="https://mitpress.mit.edu/9780262046473/computational-imaging/" target="_blank">
+              Computational Imaging
+            </a>, by Ayush Bhandari, Achuta Kadambi, and Ramesh Raskar (MIT Press, 2022).
+          </li>
+          <li>
+            <a href="https://szeliski.org/Book/" target="_blank">
+              Computer Vision: Algorithms and Applications 2nd Edition
+            </a>, by Richard Szeliski (Springer, 2022).
+          </li>
+        </ul>
+        </p>
+        <p>
+        <strong>Contact:</strong> Course announcements and general information will be posted on the course forum on BrightSpace.
+        </p>
+
+
+    </div>
+
+    <div class="container sec" style="padding-bottom: 0px;">
+        <a class="anchor" id="coursework"></a>
+        <h1>Coursework</h1>
+
+<!--             <h2>Related courses</h2>
+            <ul id="prereqs">
+                <li>CSC2530: Computational Imaging and 3D Sensing </li>
+                <li>CSC2305: Numerical Methods for Optimization Problems </li>
+                <li>CSC2503: Foundations of Computer Vision</li>
+                <li>CSC2516: Neural Networks and Deep Learning</li>
+                <li>ECE537: Random Processes</li>
+                <li>ECE1505: Convex Optimization</li>
+                <li>ECE1512: Digital Image Processing and Applications</li>
+            </ul> -->
+
+<!--         <h2>Quercus</h2>
+        <p>
+        All assignments and the final project proposal and report should be submitted on <a href="https://q.utoronto.ca/">Quercus</a>. If you work as a team, make sure to indicate your team member in the submission.
+        </p> -->
+
+        <h2>Role playing participation (55%)</h2>
+        Marks will be distributed equally across 11 paper discussions (5% per paper). All role-specific written components are due at midnight before the paper is discussed in class (i.e., Monday 11:59pm or Wednesday 11:59pm).
+
+        <h2>Course project (45%)</h2>
+        <p>The course project consists of a research project with both a written
+        report and a source code submission. Projects may be completed individually or in teams of up to
+        two students. Submit one proposal and one final report per team. The expected workload should
+        be proportional to team size.
+        </p>
+        <p>
+        Project proposal is due on Friday October 25 (5% of total grade). Final report is due at the end of classes (40% of total grade).
+        </p>
+
+        <p>The final report grade takes into account your source code submission (code organization and documentation) and the report itself (appropriate format and length, abstract, introduction, related work, description of your method, quantitative and qualitative evaluation of your method, results, discussion & conclusion, bibliography).</p>
+        <p>
+        You can work in teams of up to 2 students for the project. Submit only one proposal and final report for each team. The expected amount of work is relative to the number of team members, so if two teams work on a similar project, we'd expect less work from a smaller team. 
+        </p>
+
+        <p>The project proposal is a 1-2 page document that should contain the following elements: clear motivation of your idea, a discussion of related work along at least 3 scientific references (i.e., scientific papers not blog articles or websites), an overview of what exactly your project is about and what the final goals are, milestones for your team with a timeline and intermediate goals. After proposal submission, revisions may be suggested.</p>
+
+        <p>The final project report should look like a short (~6 pages) conference paper. We expect the following sections, which are standard practice for conference papers: abstract, introduction, related work, theory (i.e., your approach), analysis and evaluation, results, discussion and conclusion, references. Use the <a href="https://github.com/cvpr-org/author-kit/archive/refs/tags/CVPR2025-v3.1(latex).zip">CVPR 2025 LaTeX template</a> for your report. A detailed rubric can be found on BrightSpace under the final project report assignment.</p>
+
+
+        <h2>Late policy</h2>
+        <p>
+        All homework is due at midnight on the due date. For role-specific homework, there will be a 30% deduction if you submit late, but before the start of that week's lecture (i.e., if you submit anytime between 12:01am and 12pm on Tuesday or Thursday). No homework will be accepted after the start of lecture.
+        </p>
+
+        <p>
+        If you need more time to submit your project proposal or final project report, you will need to discuss your timeline with the instructor and get approval at least 1 week before the posted due date.
+        </p>
+        <h2>ChatGPT policy</h2> 
+        <p>
+        You may use any tools you find productive in preparing your reports. But you are responsible for any misrepresentations, inaccuracies, or plagiarism. If we find such defects in submitted work, we reserve the right to exact penalties, which may range from grade deductions to reporting academic misconduct depending on the severity of the offense.
+        </p>
+
+    </div>
+        
+    <div class="container sec">
+        <a class="anchor" id="schedule"></a>
+        <h1>Schedule and Syllabus</h1>
+        <table class="table">
+            <tbody>
+                <tr class="active">
+                    <th>Week</th>
+                    <th>Date</th>
+                    <th>Description</th>
+                    <th>Material</th>
+                    <th>Readings</th>
+                    <th>Event</th>
+                    <th>Deadline</th>
+                </tr>
+
+                <tr>
+                    <td><nobr>Week 1</nobr></td>
+                    <td>Tue<br>Aug 26</td>
+                    <td>
+                        <b>Lecture 1: Course intro </b><br>
+                    </td>
+                    <td>
+                        <!--[slides]-->
+                        [<a href="slides/lecture1.pdf" target="_blank">slides</a>]
+                        <br>
+
+                    </td>
+                    <td><a href="https://graphics.stanford.edu/courses/cs178/" target="_blank">Marc Levoy's course on digital photography</a></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td>Thu<br>Aug 28</td>
+                    <td><b>Lecture2: Digital photography</b>
+                    </td>                   
+                    <td>
+                        <!-- [slides]-->
+                        [<a href="slides/PS1.pdf" target="_blank">slides</a>]
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr style="border-top: 2px solid black;">
+                    <td><nobr>Week 2</nobr></td>
+                    <td>Tue<br><nobr>Sep 2</nobr></td>
+                    <td>
+                        <b>Lecture 3: Pinholes and lenses</b><br>                        
+                    </td>
+                    <td>                        
+                        <!-- [slides] -->
+                        [<a href="slides/lecture2.pdf" target="_blank">slides</a>]
+                    </td>
+                    <td>
+                        <a href="https://graphics.stanford.edu/courses/cs178/" target="_blank">Marc Levoy's course on digital photography</a>                       
+                    </td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td>Thu<br><nobr>Sep 4</nobr></td>
+                    <td><b>Lecture 4: Selected topics</b></td>                   
+                    <td>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr style="border-top: 2px solid black;">
+                    <td><nobr>Week 3</nobr></td>
+                    <td></td>
+                    <td><b>TBD</b></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td>Tue<br><nobr>Sep 9</nobr></td>
+                    <td>The visual microphone: Passive recovery of sound from video</td>
+                    <td>[<a href="https://people.csail.mit.edu/mrub/VisualMic/" target="_blank">Paper</a>]</td>
+                    <td>
+                    </td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td>Thu<br><nobr>Sep 11</nobr></td>
+                    <td>Dual-Shutter Optical Vibration Sensing</td>                   
+                    <td>
+                        [<a href="https://www.marksheinin.com/_files/ugd/a41a28_7d370603fafd419da387de85d8ecb5b4.pdf?index=true" target="_blank">Paper</a>]
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr style="border-top: 2px solid black;">
+                    <td><nobr>Week 4</nobr></td>
+                    <td></td>
+                    <td><b>TBD</b></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td>Tue<br><nobr>Sep 16</nobr></td>
+                    <td>Light field photography with a hand-held plenoptic camera</td>
+                    <td>[<a href="https://graphics.stanford.edu/papers/lfcamera/lfcamera-150dpi.pdf" target="_blank">Paper</a>]</td>
+                    <td>
+                    </td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td>Thu<br><nobr>Sep 18</nobr></td>
+                    <td>DiffuserCam: lensless single-exposure 3D imaging</td>                   
+                    <td>
+                        [<a href="https://opg.optica.org/optica/fulltext.cfm?uri=optica-5-1-1&id=380297" target="_blank">Paper</a>]
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr style="border-top: 2px solid black;">
+                    <td><nobr>Week 5</nobr></td>
+                    <td></td>
+                    <td><b>Computational Light Transport</b></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td>Tue<br><nobr>Sep 23</nobr></td>
+                    <td>Femto-photography: capturing and visualizing the propagation of light</td>
+                    <td>[<a href="https://dl.acm.org/doi/10.1145/2461912.2461928" target="_blank">Paper</a>]</td>
+                    <td>
+                    </td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td>Thu<br><nobr>Sep 25</nobr></td>
+                    <td>Recovering three-dimensional shape around a corner using ultrafast time-of-flight imaging</td>
+                    <td>
+                        <!-- [slides] -->
+                        [<a href="https://www.nature.com/articles/ncomms1747" target="_blank">Paper</a>]
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+
+                <tr style="border-top: 2px solid black;">
+                    <td><nobr>Week 6</nobr></td>
+                    <td></td>
+                    <td><b>Single-Photon Imaging</b></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td>Tue<br><nobr>Sep 30</nobr></td>
+                    <td>Passive inter-photon imaging</td>
+                    <td>[<a href="https://arxiv.org/abs/2104.00059" target="_blank">Paper</a>]</td>
+                    <td>
+                    </td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td>Thu<br><nobr>Oct 2</nobr></td>
+                    <td>Quanta Burst Photography</td>
+                    <td>
+                        <!-- [slides]-->
+                      [<a href="https://arxiv.org/abs/2006.11840" target="_blank">Paper</a>]
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+
+
+                <tr style="border-top: 2px solid black;">
+                    <td><nobr>Week 7</nobr></td>
+                    <td></td>
+                    <td><b>Single-Photon 3D Sensing</b></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td>Tue<br><nobr>Oct 7</nobr></td>
+                    <td>First-Photon Imaging</td>
+                    <td>[<a href="https://www.science.org/doi/10.1126/science.1246775" target="_blank">Paper</a>]</td>
+                    <td>
+                    </td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td>Thu<br><nobr>Oct 9</nobr></td>
+                    <td>Opportunistic Single-Photon Time of Flight</td>
+                    <td>
+                        <!-- [slides]-->
+                      [<a href="https://openaccess.thecvf.com/content/CVPR2025/papers/Nousias_Opportunistic_Single-Photon_Time_of_Flight_CVPR_2025_paper.pdff" target="_blank">Paper</a>]
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+
+
+                <tr class="" style="border-top: 2px solid black;">
+                    <td><nobr>Week 8</nobr></td>
+                    <td>Tue<br><nobr>Oct 14</nobr></td>
+                    <td>
+                        <b> Fall break
+                    </td>
+                    <td>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td>Thu<br><nobr>Oct 16</nobr></td>
+                    <td>Bringing a Blurry Frame Alive at High Frame-Rate with an Event Camera</td>
+                    <td>
+                        <!--[slides]-->
+                       [<a href="https://arxiv.org/pdf/1811.10180" target="_blank">Paper</a>]
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+
+                <tr style="border-top: 2px solid black;">
+                    <td><nobr>Week 9</nobr></td>
+                    <td>Tue<br><nobr>Oct 21</nobr></td>
+                    <td>
+                        <b>Project proposal presentation</b><br>
+                    </td>
+                    </td>
+                    <td>
+                    </td>
+                    <td>
+                    </td>
+                    <td>
+                    </td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td>Thu<br><nobr>Oct 23</nobr></td>
+                    <td><b>Projects Q&A (on Zoom)</b></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr class="danger">
+                    <td></td>
+                    <td>Fri<br><nobr>Oct 25</nobr></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><strong style="color: red;">Project proposals due at 11:59pm</strong></td>
+                </tr>
+
+
+                <tr style="border-top: 2px solid black;">
+                    <td><nobr>Week 10</nobr></td>
+                    <td></td>
+                    <td><b>Neural Representations & Computational Imaging I</b></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td>Tue<br><nobr>Oct 28</nobr></td>
+                    <td>Flying with Photons</td>
+                    <td>[<a href="https://arxiv.org/abs/2404.06493" target="_blank">Paper</a>]</td>
+                    <td>
+                    </td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td>Thu<br><nobr>Oct 30</nobr></td>
+                    <td>Neural Inverse Rendering from Propagating Light</td>
+                    <td>
+                        <!-- [slides]-->
+                      [<a href="https://www.arxiv.org/abs/2506.05347" target="_blank">Paper</a>]
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+
+                <tr style="border-top: 2px solid black;">
+                    <td><nobr>Week 11</nobr></td>
+                    <td></td>
+                    <td><b>Neural Representations & Computational Imaging II</b></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td>Tue<br><nobr>Nov 4</nobr></td>
+                    <td>NeRF in the Dark: High Dynamic Range View Synthesis from Noisy Raw Images</td>
+                    <td>[<a href="https://arxiv.org/abs/2111.13679" target="_blank">Paper</a>]</td>
+                    <td>
+                    </td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td>Thu<br><nobr>Nov 6</nobr></td>
+                    <td>Learning Lens Blur Fields</td>
+                    <td>
+                        <!-- [slides]-->
+                      [<a href="https://arxiv.org/pdf/2310.11535" target="_blank">Paper</a>]
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+
+
+                <tr style="border-top: 2px solid black;">
+                    <td><nobr>Week 11</nobr></td>
+                    <td></td>
+                    <td><b>Neural Representations & Computational Imaging III</b></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td>Tue<br><nobr>Nov 4</nobr></td>
+                    <td>Minimalist Camera/flutter shutter/coded aperture from Levin</td>
+                    <td>[<a href="https://openaccess.thecvf.com/content/CVPR2022/papers/Monakhova_Dancing_Under_the_Stars_Video_Denoising_in_Starlight_CVPR_2022_paper.pdf" target="_blank">Paper</a>]</td>
+                    <td>
+                    </td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr class="info">
+                    <td></td>
+                    <td>Thu<br><nobr>Nov 13</nobr></td>
+                    <td><b>Meeting on Zoom</b></td>
+                    <td>
+                        <!-- [slides]-->
+                      [<a href="slides/PS6.pdf" target="_blank">slides</a>]
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+
+                <tr style="border-top: 2px solid black;">
+                    <td><nobr>Week 13</nobr></td>
+                    <td></td>
+                    <td><b>Deep Optics</b></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td>Tue<br><nobr>Nov 18</nobr></td>
+                    <td>Deep Optics for Single-shot HDR Imaging</td>
+                    <td>[<a href="https://arxiv.org/abs/1908.00620" target="_blank">Paper</a>]</td>
+                    <td>
+                    </td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td>Thu<br><nobr>Nov 20</nobr></td>
+                    <td>Curriculum learning for ab initio deep learned refractive optics</td>
+                    <td>
+                        <!-- [slides]-->
+                      [<a href="https://vccimaging.org/Publications/Yang2024DeepLens/Yang2024DeepLens.pdf" target="_blank">Paper</a>]
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+
+                <tr style="border-top: 2px solid black;">
+                    <td><nobr>Week 14</nobr></td>
+                    <td></td>
+                    <td><b>Generative Computational Imaging</b></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td>Tue<br><nobr>Nov 25</nobr></td>
+                    <td>Generative Photography</td>
+                    <td>[<a href="https://arxiv.org/abs/2412.02168" target="_blank">Paper</a>]</td>
+                    <td>
+                    </td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td>Thu<br><nobr>Nov 27</nobr></td>
+                    <td><b>Thanksgiving break</b></td>
+                    <td>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+
+                <tr style="border-top: 2px solid black;">
+                    <td><nobr>Week 15</nobr></td>
+                    <td>Tue<br><nobr>Dec 2</nobr></td>
+                    <td>
+                        <b>Invited talk:</b>TBD<br> 
+                        
+                    </td>
+                    </td>
+                    <td>
+                    </td>
+                    <td>
+                    <br>
+                    </td>
+                    <td>
+                    </td>
+                    <td></td>
+                </tr>
+
+                <tr class="info">
+                    <td></td>
+                    <td>Thu<br><nobr>Dec 4</nobr></td>
+                    <td><b>Project Q&A and debugging</b></td>
+                    <td>
+                        <!-- [slides]-->
+                      [<a href="slides/PS6.pdf" target="_blank">slides</a>]
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr style="border-top: 2px solid black;">
+                    <td><nobr>Week 16</nobr></td>
+                    <td>Tue<br><nobr>Dec 9</nobr></td>
+                    <td>
+                        <b>Invited Talk:</b>TBD<br> 
+                        
+                    </td>
+                    </td>
+                    <td>
+                        <!-- [slides]-->
+                    </td>
+                    <td>
+                    </td>
+                    <td></td>
+                </tr>
+
+                <tr class="info">
+                    <td></td>
+                    <td>Thu<br><nobr>Dec 11</nobr></td>
+                    <td><b>Project Q&A</b></td>
+                    <td>
+                        <!-- [slides]-->
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+
+
+
+
+                <tr style="border-top: 2px solid black;">
+   
+
+                <tr class="danger">
+                    <td></td>
+                    <td>Sat<br><nobr>Dec 20</nobr></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><strong style="color: red;">Project reports due at 11:59pm</strong></td>
+                </tr>
+
+
+
+
+            </tbody>
+        </table>
+    </div>
+
+<!--     <div class="container sechighlight">
+        <h1>Miscellanea</h1>
+        <h4>Installing Python</h4>
+        <p>
+        We will only support Python 3.7 and recommend that you install it using Anaconda or Miniconda (see installation instructions <a href="https://docs.anaconda.com/anaconda/install/" target="_blank">here</a>).
+        </p>
+        <h4>Poster Printing Instructions</h4>
+        <p>See <a href="https://q.utoronto.ca/courses/283642/pages/poster-printing-instructions" target="_blank">Quercus</a> for instructions on how to print your poster for the final project poster session.</p>
+    </div>
+ -->
+    <div class="container sec">
+        <h1>Related courses at Purdue and elsewhere</h1>
+        <ul>
+            <li><a href="https://engineering.purdue.edu/~bouman/ece641/">Foundations of Computational Imaging</a> (Charles Bouman, Purdue)</li>
+
+            <li><a href="https://engineering.purdue.edu/ChanGroup/ECE495.html">Cameras, Images, and Statistical Inverse Problems</a> (Stanley Chan, Purdue )</li>
+            <li><a href="https://www.cs.toronto.edu/~lindell/teaching/2529/">Computational Imaging</a> (David Lindell, University of Toronto)</li>
+            <li><a href="http://www.cs.toronto.edu/~kyros/courses/320/">Introduction to Visual Computing</a> (Kyros Kutulakos, University of Toronto)</li>
+            <li><a href="http://stanford.edu/class/ee367/">Computational Imaging and Display</a> (Gordon Wetzstein, Stanford)</li>
+            <li><a href="https://graphics.cs.cmu.edu/courses/15-463/">Computational Photography</a> (Ioannis Gkioulekas, CMU)</li>
+
+            <li><a href="http://stellar.mit.edu/S/course/6/sp12/6.815/index.html">Digital and Computational Photography</a> (Fredo Durand, MIT)</li>
+        </ul>
+
+    <br>
+
+        <h4>Examples of course projects at other institutions</h2>
+    <p>
+        <ul>
+            <li><a href="https://www.cs.toronto.edu/~lindell/teaching/2529/" target="_blank">Winter 2020 (Stanford)</a></li>
+            <li><a href="http://stanford.edu/class/ee367/Winter2021/projects2021.html" target="_blank">Winter 2021 (Stanford)</a></li>
+            <li><a href="http://stanford.edu/class/ee367/Winter2022/projects2022.html" target="_blank">Winter 2022 (Stanford)</a></li>
+            <li><a href="past_projects/2022/projects2022.html" target="_blank">Fall 2022 (Toronto)</a></li>
+            <li><a href="past_projects/2023/projects2023.html" target="_blank">Fall 2023 (Toronto)</a></li>
+            <li><a href="past_projects/2024/projects2024.html" target="_blank">Fall 2024 (Toronto)</a></li>
+        </ul>
+    </p>
+        
+        <h2>Acknowledgements</h2>
+        <p>
+        The course is adapted from <a href="https://www.cs.toronto.edu/~lindell/teaching/2529/">CSC2529 at the University of Toronto by David Lindell</a>. Some of the materials used in class build on that from other instructors, including Yannis Gkioulekas, Marc Levoy, Fredo Durand, Ramesh Raskar, Kyros Kutulakos, Shree Nayar, Paul Debevec, Matthew O'Toole and others, as noted in the slides. Feel free to use these slides for academic or research purposes, but please maintain all acknowledgments.
+            This webpage is based on the website for <a href="https://www.cs.toronto.edu/~lindell/teaching/2529/" target="_blank">CSC2529</a> at the University of Toronto.</p>
+    </div>
+
+    <div class="">
+        <div class="container sec"> </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
