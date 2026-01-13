@@ -1,0 +1,1415 @@
+
+<html>
+  <meta name="robots" content="index, follow">
+
+  <head>
+    <title> CS59300CVD | Spring 2026 </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" >
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    <link href="css/bootstrap.css" rel="stylesheet" media="screen">
+    <link href="css/style.css" rel="stylesheet" media="screen">
+    <link rel="shortcut icon" type="image/x-icon" href="resource/favicon.ico">
+
+    <style>
+    .navbar-custom {
+      height: 80px !important;
+    }
+    .body-pad {
+      padding-top: 95px !important;
+    }
+    </style>
+
+    <!-- Mathjax -->
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    <script type="text/javascript"
+      src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+  </head>
+
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a href="https://purdue.edu" class="navbar-brand">
+        <img alt="Purdue Logo" src="https://www.purdue.edu/purdue/images/PU-H.svg" width="220" style="padding:10px">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="nav navbar-nav">
+          <li class="nav-item active"><a href="#" class="nav-link">Home</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="#lecture">Schedule</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#policies">Policies</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cvd-project.html">Project</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<body data-spy="scroll">
+<div class="container body-pad">
+
+  <div id="main" class="section main">
+<h1 class="text-center">CS59300CVD: Computer Vision With Deep Learning (Spring 2026)</h1>
+
+<div class="container">
+  <p>
+  <div class="row">
+    <div class="col-md-12">
+      <center>
+        <img class="img-rounded img-responsive center-block" src="images/image1.png"
+         alt="" width="256" height="256">
+         <img class="img-rounded img-responsive center-block" src="images/image2.png"
+         alt="" width="256" height="256">
+         <img class="img-rounded img-responsive center-block" src="images/image3.png"
+         alt="" width="256" height="256">
+         <img class="img-rounded img-responsive center-block" src="images/image4.png"
+         alt="" width="256" height="256">
+       </center>
+    </div>
+    <div class="col-md-12">
+      <center>
+          <b>Images generated from <a href="https://gemini.google.com/">Gemini</a> with the text prompt <q>Generate an image of Computer Vision.</q>
+          </b>
+      </center>
+    </div>
+  </div>
+  </p>
+</div>
+
+<br>
+
+<h2> Course Information </h2>
+<p>
+Computer vision is a field that focuses on building machines that can see. In this course, we will cover the fundamentals of major tasks in computer vision, starting from the basics of image formation to modern computer vision methods based on deep learning. By the end of this course, students will have a solid foundation for conducting research in computer vision and the necessary technical background to understand and implement state-of-the-art vision papers.
+</p>
+
+<h4>Pre-requisites:</h4>
+<ul>
+<li>
+  CS 37300 Data Mining & Machine Learning
+</li>
+<li>
+  MA 26500 Linear Algebra
+</li>
+<li>
+  STAT 41600 Probability
+</li>
+</ul>
+<h4>Textbook:</h4>
+<ul>
+<li>
+  [FP] Computer Vision: A Modern Approach by David Forsyth and Jean Ponce (2nd ed.)
+</li>
+<li>
+  [RS] Computer Vision: Algorithms and Applications by Richard Szeliski (2nd ed.)
+</li>
+<li>
+  [DDL] Dive into deep learning by Zhang, Aston, et al.
+</li>
+</ul>
+<h4>Grading:</h4>
+The final grade will be curved and no stricter than the cutoff:
+A+: 97-100, A: 93-96, A-: 90-92, B+: 87-89, ..., etc.
+<br>
+The percentage is computed following (without any rounding):
+<ul>
+  <li>Assignments: 50% (12.5% each assignment)</li>
+  <li>Midterm: 25%</li>
+  <li>Final Project: 25%</li>
+</ul>
+
+
+<h4> FAQ:</h4>
+<ul>
+  <li>Lecture slides will be posted on Brightspace. Some materials are from other Professors as referenced in the slides; Do not redistribute.
+  </li>
+  <li> The instructor can be best reached through Ed Discussion.
+    Please post your questions there instead of emailing TAs.</li>
+  <li> During office hours or on Ed Discussion, please avoid posting
+       partial homework solutions.
+  </li>
+  <li>Tutorial for learning Latex with Overleaf: <a href="https://www.overleaf.com/learn/latex/Tutorials">[Link]</a></li>
+</ul>
+
+<hr style="height:2px;border:none;color:#333;background-color:#333;" />
+
+<div class="row justify-content-md">
+  <h2>Instructor & TAs</h2>
+  
+  <div class="col-md-3 text-center">
+    <img class="img-fluid rounded-circle"
+         src="images/me.png"
+         alt="Sotiris Nousias"
+         style="width:220px; height:220px; object-fit:cover;">
+    <h4 class="mt-3">Sotiris Nousias</h4>
+    <strong>Instructor</strong>
+    <p>
+      Email: snousias [at] purdue.edu<br>
+      Office Hour: Monday 10-11AM.<br>
+      Location: Zoom
+    </p>
+  </div>
+
+
+    <div class="col-md-3 text-center">
+    <img class="img-fluid rounded-circle"
+         src="images/sid.png"
+         alt="Siddharth Prabakar"
+         style="width:220px; height:220px; object-fit:cover;">
+    <h4 class="mt-3">Siddharth Prabakar</h4>
+    <strong>TA</strong>
+    <p>
+      Email: prabakar [at] purdue.edu<br>
+      Office Hour: Thursdays 11-12PM.<br>
+      Location: Zoom
+    </p>
+  </div>
+  
+</div>
+
+<hr style="height:2px;border:none;color:#333;background-color:#333;" />
+<div class="row justify-content-md">
+  <div class="col-md-6">
+    <h2>Time & Location</h2>
+    <ul>
+      <li><b>Time:</b> Tuesday & Thursday (4:30PM - 5:45PM) </li>
+      <li><b>Location:</b> Lawson Computer Science Building (LWSN) 1106</li>
+    </ul>
+  </div>
+  <div class="col-md-6">
+    <h2>Other Resource</h2>
+    <ul>
+      <li><a href="https://purdue.brightspace.com/">BrightSpace</a> </li>
+      <li><a href="https://edstem.org/">Ed Discussion</a> </li>
+      <li><a href="https://www.gradescope.com/">GradeScope</a></li>
+    </ul>
+  </div>
+</div>
+
+<div id="lecture" class="section lecture"></div>
+<hr style="height:2px;border:none;color:#333;background-color:#333;" />
+<h2> Course Schedule</h2>
+<p><i>The following schedule is tentative and subject to change.</i></p>
+<table class="table">
+  <tr class="alert alert-primary">
+    <th>Date</th><th>Event</th><th>Description</th><th>Readings</th>
+  </tr>
+  
+  
+  
+  <tr class='alert alert-'>
+    
+    <td>Jan 13</td>
+    
+      <td>Lecture 1</td>
+      
+    
+
+    <td class="w-50">Introduction + Applied DL -- Formulation
+      <div class = "collapse" id="collapseExample2">
+        <br>
+        
+        <ol class="list">
+          
+            <li>
+            
+              
+            
+            </li>
+          
+        </ul>
+      </div>
+    </td>
+		<td>
+      
+        DDL 3
+      
+		</td>
+	</tr>
+  
+  <tr class='alert alert-'>
+    
+    <td>Jan 15</td>
+    
+      <td>Lecture 2</td>
+      
+    
+
+    <td class="w-50">Applied DL -- Network & Training
+      <div class = "collapse" id="collapseExample3">
+        <br>
+        
+        <ol class="list">
+          
+            <li>
+            
+              
+            
+            </li>
+          
+        </ul>
+      </div>
+    </td>
+		<td>
+      
+        DDL 2
+      
+		</td>
+	</tr>
+  
+  <tr class='alert alert-info'>
+    
+    <td>Jan 20</td>
+    
+      <td>Info.</td>
+    
+
+    <td class="w-50">Assignment 1 Released
+      <div class = "collapse" id="collapseExample4">
+        <br>
+        
+        <h6>Select from the following:</h6>
+        
+        <ol class="list">
+          
+        </ul>
+      </div>
+    </td>
+		<td>
+      
+        
+      
+		</td>
+	</tr>
+  
+  <tr class='alert alert-'>
+    
+    <td>Jan 20</td>
+    
+      <td>Lecture 3</td>
+      
+    
+
+    <td class="w-50">Image Processing - I
+      <div class = "collapse" id="collapseExample5">
+        <br>
+        
+        <ol class="list">
+          
+            <li>
+            
+              
+            
+            </li>
+          
+        </ul>
+      </div>
+    </td>
+		<td>
+      
+        RS 2
+      
+		</td>
+	</tr>
+  
+  <tr class='alert alert-'>
+    
+    <td>Jan 22</td>
+    
+      <td>Lecture 4</td>
+      
+    
+
+    <td class="w-50">Image Processing - II
+      <div class = "collapse" id="collapseExample6">
+        <br>
+        
+        <ol class="list">
+          
+        </ul>
+      </div>
+    </td>
+		<td>
+      
+		</td>
+	</tr>
+  
+  <tr class='alert alert-'>
+    
+    <td>Jan 27</td>
+    
+      <td>Lecture 5</td>
+      
+    
+
+    <td class="w-50">Image Filtering - I
+      <div class = "collapse" id="collapseExample7">
+        <br>
+        
+        <ol class="list">
+          
+            <li>
+            
+              
+            
+            </li>
+          
+        </ul>
+      </div>
+    </td>
+		<td>
+      
+        FP 4, DDL 7
+      
+		</td>
+	</tr>
+  
+  <tr class='alert alert-'>
+    
+    <td>Jan 29</td>
+    
+      <td>Lecture 6</td>
+      
+    
+
+    <td class="w-50">Image Filtering - II + CNN
+      <div class = "collapse" id="collapseExample8">
+        <br>
+        
+        <ol class="list">
+          
+            <li>
+            
+              
+            
+            </li>
+          
+        </ul>
+      </div>
+    </td>
+		<td>
+      
+        RS 3.4
+      
+		</td>
+	</tr>
+  
+  <tr class='alert alert-'>
+    
+    <td>Feb 3</td>
+    
+      <td>Lecture 7</td>
+      
+    
+
+    <td class="w-50">Edge / Corner Detection - I
+      <div class = "collapse" id="collapseExample9">
+        <br>
+        
+        <ol class="list">
+          
+            <li>
+            
+              
+            
+            </li>
+          
+        </ul>
+      </div>
+    </td>
+		<td>
+      
+        FP 5.1-5.2
+      
+		</td>
+	</tr>
+  
+  <tr class='alert alert-'>
+    
+    <td>Feb 5</td>
+    
+      <td>Lecture 8</td>
+      
+    
+
+    <td class="w-50">Edge / Corner Detection - II + CNN
+      <div class = "collapse" id="collapseExample10">
+        <br>
+        
+        <ol class="list">
+          
+            <li>
+            
+              
+            
+            </li>
+          
+        </ul>
+      </div>
+    </td>
+		<td>
+      
+        FP 5.3
+      
+		</td>
+	</tr>
+  
+  <tr class='alert alert-warning'>
+    
+    <td>Feb 5</td>
+    
+      <td>Deadline</td>
+    
+
+    <td class="w-50">Assignment 1 Due at 11:59PM
+      <div class = "collapse" id="collapseExample11">
+        <br>
+        
+        <h6>Select from the following:</h6>
+        
+        <ol class="list">
+          
+        </ul>
+      </div>
+    </td>
+		<td>
+      
+        
+      
+		</td>
+	</tr>
+  
+  <tr class='alert alert-info'>
+    
+    <td>Feb 6</td>
+    
+      <td>Info.</td>
+    
+
+    <td class="w-50">Assignment 2 Released
+      <div class = "collapse" id="collapseExample12">
+        <br>
+        
+        <h6>Select from the following:</h6>
+        
+        <ol class="list">
+          
+        </ul>
+      </div>
+    </td>
+		<td>
+      
+        
+      
+		</td>
+	</tr>
+  
+  <tr class='alert alert-'>
+    
+    <td>Feb 10</td>
+    
+      <td>Lecture 9</td>
+      
+    
+
+    <td class="w-50">SIFT - I
+      <div class = "collapse" id="collapseExample13">
+        <br>
+        
+        <ol class="list">
+          
+        </ul>
+      </div>
+    </td>
+		<td>
+      
+		</td>
+	</tr>
+  
+  <tr class='alert alert-'>
+    
+    <td>Feb 12</td>
+    
+      <td>Lecture 10</td>
+      
+    
+
+    <td class="w-50">SIFT - II
+      <div class = "collapse" id="collapseExample14">
+        <br>
+        
+        <ol class="list">
+          
+        </ul>
+      </div>
+    </td>
+		<td>
+      
+		</td>
+	</tr>
+  
+  <tr class='alert alert-'>
+    
+    <td>Feb 17</td>
+    
+      <td>Lecture 11</td>
+      
+    
+
+    <td class="w-50">Fitting & Alignment - I
+      <div class = "collapse" id="collapseExample15">
+        <br>
+        
+        <ol class="list">
+          
+            <li>
+            
+              
+            
+            </li>
+          
+        </ul>
+      </div>
+    </td>
+		<td>
+      
+        FP 10.2-10.4, 22.1
+      
+		</td>
+	</tr>
+  
+  <tr class='alert alert-'>
+    
+    <td>Feb 19</td>
+    
+      <td>Lecture 12</td>
+      
+    
+
+    <td class="w-50">Fitting & Alignment - II
+      <div class = "collapse" id="collapseExample16">
+        <br>
+        
+        <ol class="list">
+          
+            <li>
+            
+              
+            
+            </li>
+          
+        </ul>
+      </div>
+    </td>
+		<td>
+      
+        FP 12.1
+      
+		</td>
+	</tr>
+
+
+  <tr class='alert alert-warning'>
+    
+    <td>Feb 20</td>
+    
+      <td>Deadline</td>
+    
+
+    <td class="w-50">Assignment 2 Due at 11:59PM
+      <div class = "collapse" id="collapseExample19">
+        <br>
+        
+        <h6>Select from the following:</h6>
+        
+        <ol class="list">
+          
+        </ul>
+      </div>
+    </td>
+    <td>
+      
+        
+      
+    </td>
+  </tr>
+
+  
+  <tr class='alert alert-'>
+    
+    <td>Feb 24</td>
+    
+      <td>Lecture 13</td>
+      
+    
+
+    <td class="w-50">Fitting & Alignment - III
+      <div class = "collapse" id="collapseExample17">
+        <br>
+        
+        <ol class="list">
+          
+        </ul>
+      </div>
+    </td>
+		<td>
+      
+		</td>
+	</tr>
+  
+  <tr class='alert alert-'>
+    
+    <td>Feb 26</td>
+    
+      <td>Lecture 14</td>
+      
+    
+
+    <td class="w-50">Cameras, Light, and Shading - I
+      <div class = "collapse" id="collapseExample18">
+        <br>
+        
+        <ol class="list">
+          
+            <li>
+            
+              
+            
+            </li>
+          
+        </ul>
+      </div>
+    </td>
+		<td>
+      
+        FP 1
+      
+		</td>
+	</tr>
+
+
+
+  <tr class='alert alert-'>
+    
+    <td>Mar 3</td>
+    
+      <td>Guest Lecture</td>
+      
+    
+
+    <td class="w-50">Invited Talk - TBD
+      <div class = "collapse" id="collapseExample21">
+        <br>
+        
+        <ol class="list">
+          
+            <li>
+            
+              
+            
+            </li>
+          
+        </ul>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+  
+  
+  <tr class='alert alert-success'>
+    
+    <td>Mar 5</td>
+    
+      <td>Break</td>
+    
+
+    <td class="w-50">ECCV deadline
+      <div class = "collapse" id="collapseExample20">
+        <br>
+        
+        <h6>Select from the following:</h6>
+        
+        <ol class="list">
+          
+        </ul>
+      </div>
+    </td>
+		<td>
+      
+		</td>
+	</tr>
+
+
+
+  <tr class='alert alert-'>
+    
+    <td>Mar 10</td>
+    
+      <td>Lecture 15</td>
+      
+
+    <td class="w-50">Cameras, Light, and Shading - II
+      <div class = "collapse" id="collapseExample21">
+        <br>
+        
+        <ol class="list">
+          
+            <li>
+            
+              
+            
+            </li>
+          
+        </ul>
+      </div>
+    </td>
+    <td>
+      
+        FP 2
+      
+    </td>
+  </tr>
+
+  <tr class='alert alert-'>
+    
+    <td>Mar 12</td>
+    
+      <td>Lecture 16</td>
+      
+    
+
+    <td class="w-50">Color + Perspective Projection - I
+      <div class = "collapse" id="collapseExample26">
+        <br>
+        
+        <ol class="list">
+          
+            <li>
+            
+              
+            
+            </li>
+          
+        </ul>
+      </div>
+    </td>
+    <td>
+      
+        FP 1
+      
+    </td>
+  </tr>
+
+
+
+  <tr class='alert alert-success'>
+    
+    <td>Mar 17</td>
+    
+      <td>Break</td>
+    
+
+    <td class="w-50">Spring Break
+      <div class = "collapse" id="collapseExample20">
+        <br>
+        
+        <h6>Select from the following:</h6>
+        
+        <ol class="list">
+          
+        </ul>
+      </div>
+    </td>
+    <td>
+      
+    </td>
+  </tr>
+
+
+  <tr class='alert alert-success'>
+    
+    <td>Mar 19</td>
+    
+      <td>Break</td>
+    
+
+    <td class="w-50">Spring Break
+      <div class = "collapse" id="collapseExample20">
+        <br>
+        
+        <h6>Select from the following:</h6>
+        
+        <ol class="list">
+          
+        </ul>
+      </div>
+    </td>
+    <td>
+      
+    </td>
+  </tr>
+
+
+
+  
+  <tr class='alert alert-warning'>
+    
+    <td>Mar 23</td>
+    
+      <td>Deadline</td>
+    
+
+    <td class="w-50">Project Proposal Due at 11:59PM
+      <div class = "collapse" id="collapseExample22">
+        <br>
+        
+        <h6>Select from the following:</h6>
+        
+        <ol class="list">
+          
+        </ul>
+      </div>
+    </td>
+    <td>
+  </tr>
+
+
+  <tr class='alert alert-'>
+    
+    <td>Mar 24</td>
+    
+      <td>Lecture 17</td>
+      
+    
+
+    <td class="w-50">Midterm Review
+      <div class = "collapse" id="collapseExample23">
+        <br>
+        
+        <ol class="list">
+          
+        </ul>
+      </div>
+    </td>
+    <td>
+      
+    </td>
+  </tr>
+
+
+
+  <tr class='alert alert-warning'>
+    
+    <td>Mar 26</td>
+    
+      <td>Deadline</td>
+    
+
+    <td class="w-50">Midterm
+      <div class = "collapse" id="collapseExample24">
+        <br>
+        
+        <h6>Select from the following:</h6>
+        
+        <ol class="list">
+          
+        </ul>
+      </div>
+    </td>
+    <td>
+      
+           
+    </td>
+  </tr>
+
+  <tr class='alert alert-info'>
+    
+    <td>Mar 27</td>
+    
+      <td>Info.</td>
+    
+
+    <td class="w-50">Assignment 3 Released
+      <div class = "collapse" id="collapseExample25">
+        <br>
+        
+        <h6>Select from the following:</h6>
+        
+        <ol class="list">
+          
+        </ul>
+      </div>
+    </td>
+    <td>
+
+
+
+  <tr class='alert alert-'>
+    
+    <td>Mar 31</td>
+    
+      <td>Lecture 18</td>
+      
+    
+
+    <td class="w-50">Perspective Projection - II
+      <div class = "collapse" id="collapseExample27">
+        <br>
+        
+        <ol class="list">
+          
+        </ul>
+      </div>
+    </td>
+    <td>
+      
+    </td>
+  </tr>
+  
+  <tr class='alert alert-'>
+    
+    <td>Apr 2</td>
+    
+      <td>Lecture 19</td>
+      
+    
+
+    <td class="w-50">Camera Calibration & Single-View Modeling - I
+      <div class = "collapse" id="collapseExample28">
+        <br>
+        
+        <ol class="list">
+          
+            <li>
+            
+              
+            
+            </li>
+          
+        </ul>
+      </div>
+    </td>
+    <td>
+      
+        FP 1
+      
+    </td>
+  </tr>
+  
+  <tr class='alert alert-'>
+    
+    <td>Apr 7</td>
+    
+      <td>Lecture 20</td>
+      
+    
+
+    <td class="w-50">Camera Calibration & Single-View Modeling - II
+      <div class = "collapse" id="collapseExample29">
+        <br>
+        
+        <ol class="list">
+          
+        </ul>
+      </div>
+    </td>
+    <td>
+      
+    </td>
+  </tr>
+
+
+
+  <tr class='alert alert-'>
+    
+    <td>Apr 9</td>
+    
+      <td>Lecture 21</td>
+      
+    
+
+    <td class="w-50">Epipolar Geometry & Structure from Motion - I
+      <div class = "collapse" id="collapseExample32">
+        <br>
+        
+        <ol class="list">
+          
+            <li>
+            
+              
+            
+            </li>
+          
+        </ul>
+      </div>
+    </td>
+    <td>
+      
+        FP 7.1
+      
+    </td>
+  </tr>
+
+
+  
+  <tr class='alert alert-warning'>
+    
+    <td>Apr 10</td>
+    
+      <td>Deadline</td>
+    
+
+    <td class="w-50">Assignment 3 Due at 11:59PM
+      <div class = "collapse" id="collapseExample30">
+        <br>
+        
+        <h6>Select from the following:</h6>
+        
+        <ol class="list">
+          
+        </ul>
+      </div>
+    </td>
+    <td>
+      
+        
+      
+    </td>
+  </tr>
+  
+  <tr class='alert alert-info'>
+    
+    <td>Apr 11</td>
+    
+      <td>Info.</td>
+    
+
+    <td class="w-50">Assignment 4 Released
+      <div class = "collapse" id="collapseExample31">
+        <br>
+        
+        <h6>Select from the following:</h6>
+        
+        <ol class="list">
+          
+        </ul>
+      </div>
+    </td>
+    <td>
+      
+        
+      
+    </td>
+  </tr>
+  
+  
+  <tr class='alert alert-'>
+    
+    <td>Apr 14</td>
+    
+      <td>Lecture 22</td>
+      
+    
+
+    <td class="w-50">Epipolar Geometry & Structure from Motion - II
+      <div class = "collapse" id="collapseExample34">
+        <br>
+        
+        <ol class="list">
+          
+        </ul>
+      </div>
+    </td>
+    <td>
+      
+    </td>
+  </tr>
+  
+  <tr class='alert alert-'>
+    
+    <td>Apr 16</td>
+    
+      <td>Lecture 23</td>
+      
+    
+
+    <td class="w-50">Two/Multi-View Stereo
+      <div class = "collapse" id="collapseExample35">
+        <br>
+        
+        <ol class="list">
+          
+        </ul>
+      </div>
+    </td>
+    <td>
+      
+    </td>
+  </tr>
+  
+  <tr class='alert alert-'>
+    
+    <td>Apr 21</td>
+    
+      <td>Lecture 24</td>
+      
+    <td class="w-50">Light Field Modeling
+      <div class = "collapse" id="collapseExample36">
+        <br>
+        
+        <ol class="list">
+          
+        </ul>
+      </div>
+    </td>
+    <td>
+      
+    </td>
+  </tr>
+
+
+  <tr class='alert alert-'>
+    
+    <td>Apr 23</td>
+    
+      <td>Lecture 25</td>
+      
+    <td class="w-50">Image Classification, Segmentation, Detection - I
+      <div class = "collapse" id="collapseExample38">
+        <br>
+        
+        <ol class="list">
+          
+        </ul>
+      </div>
+    </td>
+    <td>
+      
+    </td>
+  </tr>
+
+
+
+  <tr class='alert alert-warning'>
+    
+    <td>Apr 24</td>
+    
+      <td>Deadline</td>
+    
+
+    <td class="w-50">Assignment 4 Due at 11:59PM
+      <div class = "collapse" id="collapseExample40">
+        <br>
+        
+        <h6>Select from the following:</h6>
+        
+        <ol class="list">
+          
+        </ul>
+      </div>
+    </td>
+    <td>
+      
+    </td>
+  </tr>
+
+  <tr class='alert alert-'>
+    
+    <td>Apr 28</td>
+    
+      <td>Lecture 26</td>
+      
+    
+
+    <td class="w-50">Language and Vision + Final Remarks
+      <div class = "collapse" id="collapseExample39">
+        <br>
+        
+        <ol class="list">
+          
+        </ul>
+      </div>
+    </td>
+    <td>
+      
+    </td>
+  </tr>
+
+  
+
+  
+<!--   <tr class='alert alert-warning'>
+    
+    <td>Dec 7</td>
+    
+      <td>Deadline</td>
+    
+
+    <td class="w-50">Final Presentation Slides Due at 11:59PM
+      <div class = "collapse" id="collapseExample41">
+        <br>
+        
+        <h6>Select from the following:</h6>
+        
+        <ol class="list">
+          
+        </ul>
+      </div>
+    </td>
+		<td> 
+
+		</td>
+	</tr> -->
+  
+  <tr class='alert alert-'>
+    
+    <td>Apr 30</td>
+    
+      <td>Presentation</td>
+    
+
+    <td class="w-50">Project Presentations
+      <div class = "collapse" id="collapseExample42">
+        <br>
+        
+        <h6>Select from the following:</h6>
+        
+        <ol class="list">
+          
+        </ul>
+      </div>
+    </td>
+		<td>
+      
+		</td>
+	</tr> 
+
+<!--   
+  <tr class='alert alert-'>
+    
+    <td>Dec 11</td>
+    
+      <td>Presentation</td>
+    
+
+    <td class="w-50">Project Presentations
+      <div class = "collapse" id="collapseExample43">
+        <br>
+        
+        <h6>Select from the following:</h6>
+        
+        <ol class="list">
+          
+        </ul>
+      </div>
+    </td>
+		<td>
+      
+		</td>
+	</tr> -->
+  
+  <tr class='alert alert-warning'>
+    
+    <td>May 8</td>
+    
+      <td>Deadline</td>
+    
+
+    <td class="w-50">Final Project Report Due at 11:59PM
+      <div class = "collapse" id="collapseExample44">
+        <br>
+        
+        <h6>Select from the following:</h6>
+        
+        <ol class="list">
+          
+        </ul>
+      </div>
+    </td>
+		<td>
+      
+        
+      
+		</td>
+	</tr>
+  
+</table>
+</div>
+
+<hr style="height:2px;border:none;color:#333;background-color:#333;" />
+<div id="policies" class="section policies">
+<h2> Policies </h2>
+
+<h4> Late & Absence Policy </h4>
+<p>
+We provide one hour grace period after the deadline to account for any technical glitches.
+After the grace period we do not accept late assignments, i.e., late assignment by a second after the grace period will be counted as 0%.
+For the consistency and fairness to all students, we follow the policy and absence request through the <a href="https://www.purdue.edu/advocacy/students/absences.html"> Office of the Dean of Students. </a>
+</p>
+
+<h4> Academic Honesty </h4>
+<p>
+Please refer to
+  <a href="https://www.purdue.edu/odos/osrr/academic-integrity/index.html">Purdue's Student Guide for Academic Integrity</a>.
+  Academic dishonesty will result in an automatic zero on an assignment (not droppable) and the course grade will be reduced by one full letter grade.
+  A second attempt will result in a failing grade for the course. It is one's responsibility to prevent others from copying your work.
+</p>
+
+<h4>Accessibility</h4>
+<p>
+Purdue University strives to make learning experiences as accessible as possible. If you anticipate or experience physical or academic barriers based on disability, please contact the <a href="https://www.purdue.edu/drc/">Disability Resource Center</a> at: drc@purdue.edu or by phone at 765-494-1247 and the course instructor to arrange for accommodations. 
+</p>
+
+<h4> Classroom Guidance Regarding Protect Purdue </h4>
+<p>
+Any student who has substantial reason to believe that another person is threatening the safety of others by not complying with Protect Purdue protocols is encouraged to report the behavior to and discuss the next steps with their instructor.
+  Students also have the option of reporting the behavior to the <a href="https://www.purdue.edu/odos/osrr/">Office of the Student Rights and Responsibilities</a>. See also <a href="https://catalog.purdue.edu/content.php?catoid=15&navoid=18604#purdue-university-bill-of-student-rights">Purdue University Bill of Student Rights</a> and the Violent Behavior Policy under University Resources in Brightspace.
+</p>
+
+<h4> University Policies</h4>
+<p>
+Please refer to additional university policies in <a href="https://purdue.brightspace.com/">BrightSpace</a>.
+</p>
+
+
+
+<br>
+
+      </div>
+    </body>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+    <!-- From https://codepen.io/JacobLett/pen/QqOmZj-->
+    <script>
+    $(document).ready(function() {
+        $('[data-toggle="collapse"]').click(function() {
+          $(this).toggleClass( "active" );
+          if ($(this).hasClass("active")) {
+            $(this).text("Collapse");
+          } else {
+            $(this).text("Show all");
+          }
+        });
+    });
+    </script>
+
+</html>
+
+
+
